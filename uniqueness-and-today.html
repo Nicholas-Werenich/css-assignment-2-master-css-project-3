@@ -1,0 +1,273 @@
+<!--
+  Name: Nicholas Werenich
+  Course: Web Development
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 1/19/2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty 3 Info</title>
+    <!--
+      Link that attaches the external stylesheet to the webpage
+    -->
+    <link rel="stylesheet" href="style-sheets/main.css" />
+    <!--
+      Internal styling for elements specific to this webpage
+    -->
+    <style>
+      /*
+        Adds 5% of margin on each side of the body
+      */
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+
+      /*
+        Any element with the tag figure should have its text aligned to the center and should be centered in the middle of its parent element.
+      */
+      figure {
+        text-align: center;
+        margin: auto;
+      }
+
+      /*
+        Any text within figcaption should be small
+      */
+      figcaption {
+        font-size: small;
+      }
+
+      /*
+        Adds a slight curve of 10% to the edges of images. Also makes a transition that lasts one second and eases in and out.
+      */
+      img {
+        border-radius: 10%;
+        -o-transition: border-radius ease-in-out 1s;
+        -moz-transition: border-radius ease-in-out 1s;
+        -webkit-transition: border-radius ease-in-out 1s;
+        -ms-transition: border-radius ease-in-out 1s;
+      }
+
+      /*
+        Removes the slight curve at the edges of images when hovered over
+      */
+      img:hover {
+        border-radius: 0%;
+      }
+
+      /*
+        Creates a grid with 5 columns and 5 rows with automatic adjustments. There will be a gap of 5% between each cell in the grid.
+      */
+      main {
+        display: grid;
+
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+
+        grid-gap: 5%;
+      }
+
+      /*
+        Causes the element with the id to spread across columns 1-4 and row 1
+      */
+      #grid-treaty3-negotiation {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 1;
+      }
+
+      /*
+        Causes the element with the id to spread across column 5 and rows 1-3
+      */
+      #grid-image-northwest-map {
+        grid-column: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      /*
+        Causes the element with the id to spread across columns 1-4 and row 2
+      */
+      #grid-treaty3-unique {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 2;
+      }
+
+      /*
+        Causes the element with the id to spread across columns 1-4 and row 3
+      */
+      #grid-treaty3-today {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 3;
+      }
+
+      /*
+        Causes the element with the id to spread across column 5 and rows 3-5
+      */
+      #grid-image-chief {
+        grid-column: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+      }
+
+      /*
+        Causes the element with the id to spread across columns 1-4 and row 4
+      */
+      #grid-sources {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Contains introductory content, used as a nav bar in this case
+    -->
+    <header>
+      <h1>Treaty 3</h1>
+      <!--
+        Navigation containing links to other webpages
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="terms-and-purpose.html">Terms and Purpose</a></li>
+          <li>
+            <a href="uniqueness-and-today.html" class="active"
+              >Uniqueness and Present Affect</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--
+      Contains the meat of the website
+    -->
+    <main>
+      <!--
+        Section explaining where treaty 3 was negotiated
+      -->
+      <section id="grid-treaty3-negotiation">
+        <h2>Where treaty 3 was negotiated</h2>
+        <p class="info-blocks">
+          Treaty 3 was negotiated in Fort Frances, Fort William and the final
+          negotiations of treaty was on October
+          <sup>3rd</sup>, 1873 in North-West angle.
+        </p>
+      </section>
+
+      <!--
+        A figure of a map of northwest angle with a figcaption that's about the image
+      -->
+      <figure id="grid-image-northwest-map">
+        <img
+          src="images/NORTHWEST_Angle.png"
+          alt="An image of a map showing the area around NorthWest angle.
+          It shows the area where Manitoba, Ontario and Minnesota intersect.
+          The area of NorthWest angle is surrounded by water and Canada,
+          it has a big black arrow pointing to it with NorthWest angle on the end." />
+        <figcaption>
+          North-west angle is the northernmost point of the continental US
+        </figcaption>
+      </figure>
+
+      <!--
+        Section explaining what's unique about treaty 3
+      -->
+      <section id="grid-treaty3-unique">
+        <h2>What's Unique about Treaty 3?</h2>
+        <p class="info-blocks">
+          Treaty 3 differs from the other treaty's due to it's
+          <span>half-breed</span>
+          adhesion. Its the only of the numbered treaties to ignore the typical
+          exclusion of Metis from treaties. In 1874 the metis surrounding
+          <span>rainy lake</span> and <span>rainy river</span> requested to join
+          the treaty. They were included in an adhesion in 1875 and promised the
+          same benefits as the indigenous in the treaty. Canada then created a
+          policy where metis had to become "indians" in order to benefit from
+          treaty #3, completely nullifying the effect of the half-breed
+          adhesion.
+        </p>
+      </section>
+
+      <!--
+        Section explaining about treaty 3 today
+      -->
+      <section id="grid-treaty3-today">
+        <h2>Treaty 3 today</h2>
+        <p class="info-blocks">
+          Grand Council Treaty #3 is an administrative body that speaks for the
+          28 First nations and 25,000 indigenous people, their reach extends
+          over 55,000 square miles of land. Treaty 3 land even got its own
+          police force in 2003 called the TTPS (treaty three police service).
+          <span>Francis Kavanaugh</span> is the current elected chief and is
+          currently serving his third term.
+        </p>
+      </section>
+
+      <!--
+        A figure the Grand Council Treaty 3 Chief with a fig caption talking about it
+      -->
+      <figure id="grid-image-chief">
+        <img
+          src="images/Ogichidaa-Francis-Kavanaugh-e1573161289411.jpg"
+          width="488px"
+          alt="A portrait photo of Francis Kavanugh, the Chief of Grand Council Treaty 3.
+          He is looking at the camera and is wearing black glasses with a chief hat.
+          The background is black with some soft fog like white parts." />
+        <figcaption>
+          Francis Kavanaugh is the current Chief of Grand Council Treaty 3
+        </figcaption>
+      </figure>
+
+      <!--
+        Section display all used sources as links
+      -->
+      <section id="grid-sources">
+        <h2>Sources:</h2>
+        <p>
+          <a href="http://gct3.ca/our-nation/">Grand Council Treaty #3</a>
+        </p>
+        <p>
+          <a href="https://www.thecanadianencyclopedia.ca/en/article/treaty-3"
+            >The Canadian Encyclopedia</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.rcaanc-cirnac.gc.ca/eng/1100100028675/1581294028469"
+            >Government of Canada</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://www.metisnation.org/news/understanding-the-halfbreed-adhesion-to-treaty-3/"
+            >Metis Nation of Ontario</a
+          >
+        </p>
+        <p>
+          <a
+            href="https://livelearn.ca/article/living-in-manitoba/what-are-treaties-why-should-you-know-about-them/"
+            >Live Learn</a
+          >
+        </p>
+      </section>
+    </main>
+    <!--
+      Footer holding copyright info
+    -->
+    <footer>
+      <hr />
+      <p>&#169; Nicholas Werenich</p>
+    </footer>
+  </body>
+</html>

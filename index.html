@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty 3 Home</title>
+    <!--
+      Link that attaches the external stylesheet to the webpage.
+    -->
+    <link rel="stylesheet" href="style-sheets/main.css" />
+    <!--
+      Styles content only on this webpage
+    -->
+    <style>
+      body {
+        padding-top: 4%;
+      }
+      /*
+        Affects: the element with the id of on-image
+
+        Changes the colour to #3d8361
+
+        No space is created to fit the element in, it allows the affected element to lay on top of other elements
+
+        Pushes the element by 50% from the top
+
+        Pushes the element by 50% from the left
+
+        Repositions the image by 50% horizontally and 50% vertically
+
+        Adds a semi-transparent white background to the header
+
+        Adds 10px of padding around the heading to extend the white background
+      */
+      #on-image {
+        text-shadow: 0px 3px 9px rgba(0, 0, 0, 0.2);
+        color: #3d8361;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #f0f2f283;
+        padding: 10px;
+
+        -ms-transform: translate(-50%, 50%);
+        -o-transform: translate(-50%, 50%);
+        -moz-transform: translate(-50%, 50%);
+        -webkit-transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
+      }
+
+      /*
+        Affects: secondary h2 titles
+
+        Aligns the titles to the center of their container
+      */
+      h2 {
+        text-align: center;
+      }
+
+      /*
+        Affects: the element with the tag of banner
+
+        Repositions the element so that is different from its natural position, other content will not make room for its new position
+      */
+      #banner {
+        position: relative;
+      }
+
+      /*
+        Affects: images
+
+        Changes how the image responds to being resized, cover makes it keep its aspect ratio and crops the rest
+
+        Keeps the width of the element at 100%
+
+        Limits the height of the element to 540px vertically
+
+        Moves the image to the right
+      */
+      img {
+        -ms-object-fit: cover;
+        -o-object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        height: 540px;
+        float: right;
+      }
+
+      /*
+        Affects: the element with the id of right-part
+
+        Moves the element to the right of the container
+
+        Adds 5% of space to the right of the element
+      */
+      #right-part {
+        float: right;
+        width: 40%;
+        padding-right: 5%;
+      }
+
+      /*
+        Affects: the element with the id of left-part
+
+        Moves the element to the left of the container
+
+        Adds 5% of space to the left of the element
+      */
+      #left-part {
+        float: left;
+        width: 40%;
+        padding-left: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Contains introductory content, used as a nav bar in this case
+    -->
+    <header>
+      <h1>Treaty 3</h1>
+      <!--
+        Navigation containing links to other webpages
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="terms-and-purpose.html">Terms and Purpose</a></li>
+          <li>
+            <a href="uniqueness-and-today.html"
+              >Uniqueness and Present Affect</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--
+      Contains the meat of the website
+    -->
+    <main>
+      <!--
+        Div used as a container to allow text to be over-layed on top of image
+      -->
+      <section id="banner">
+        <!--
+          Image of trees with blue sky
+        -->
+        <img
+          src="Images/Tree-skyline.jpg"
+          alt="A front view of a line of different types of trees.
+        There is a clear different between the green trees and the blue clear sky above them.
+        In the middle of the sky is text that reads, 'Learn everything about treaty 3'." />
+        <!--
+          Large text header
+        -->
+        <h1 id="on-image">learn everything about treaty 3</h1>
+      </section>
+
+      <!--
+        Section with a title and content with an id of left-part in order to be beside the other section
+      -->
+      <section id="left-part">
+        <h2>What are treaties?</h2>
+        <p class="info-blocks">
+          "A Treaty is an agreement which was made in a sacred trust between the
+          Indigenous Peoples of Canada and the Crown. First Nations Treaties are
+          negotiated agreements that clearly spell out the rights,
+          responsibilities and relationships of First Nations and the federal
+          and provincial governments.”- Livelearn
+        </p>
+      </section>
+      <!--
+        Section with a title and content with an id of right-part in order to be beside the other section
+      -->
+      <section id="right-part">
+        <h2>Why learn about treaties?</h2>
+        <p class="info-blocks">
+          "This means that Treaties do not involve only the First Nations and
+          the government or the Crown, it also involves you. Every Canadian has
+          Treaty rights. For example, if you own property or plan on owning
+          property in Canada, you are exercising a right that goes back to the
+          very first signed Treaties. Treaties benefit all Canadians. They
+          ensure the well-being of both parties to the agreement through
+          economic and political means."- Livelearn
+        </p>
+      </section>
+    </main>
+    <!--
+      Footer holding copyright info
+    -->
+    <footer>
+      <hr />
+      <p>&#169; Nicholas Werenich</p>
+    </footer>
+  </body>
+</html>
